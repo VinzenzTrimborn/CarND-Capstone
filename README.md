@@ -6,7 +6,7 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
 [//]: # (Image References)
 
 [image1]: ./examples/System_Architecture_Diagram.png "System_Architecture_Diagram"
-[image2]: ./examples/Traffic_Light_Detection_Node.png "Traffic_Light_Detection_Node"
+[image2]: ./examples/tl-detector-ros-graph.png "tl-detector-ros-graph"
 [image3]: ./examples/waypoint-updater-ros-graph.png "waypoint-updater-ros-graph"
 [image4]: ./examples/dbw-node-ros-graph.png "dbw-node-ros-graph"
 
