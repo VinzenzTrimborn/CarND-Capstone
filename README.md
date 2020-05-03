@@ -1,6 +1,18 @@
-This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. 
+# Programming a Real Self-Driving Car
+
+### Introduction
+This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For this project, I was writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following. In the end I tested my code using a simulator provided by Udacity. Finally, I submitted the project to be run on a real autonomous vehicle.
+
+[//]: # (Image References)
+
+[image1]: ./examples/System_Architecture_Diagram.png "System_Architecture_Diagram"
 
 
+### System Architecture Diagram
+
+The following is a system architecture diagram showing the ROS nodes and topics used in the project.
+
+![alt text][image1]
 
 Please use **one** of the two installation options, either native **or** docker installation.
 
