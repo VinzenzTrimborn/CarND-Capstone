@@ -6,6 +6,7 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
 [//]: # (Image References)
 
 [image1]: ./examples/System_Architecture_Diagram.png "System_Architecture_Diagram"
+[image2]: ./examples/Traffic_Light_Detection_Node.png "STraffic_Light_Detection_Node"
 
 
 ## Native Installation
@@ -51,3 +52,16 @@ roslaunch launch/styx.launch
 The following is a system architecture diagram showing the ROS nodes and topics used in the project.
 
 ![alt text][image1]
+
+### Code Structure
+
+Below is a brief overview of the repo structure, along with descriptions of the ROS nodes. The code that I modified for the project is contained entirely within the ./ros/src/ directory. Within this directory, you will find the following ROS packages:
+
+### ./ros/src/tl_detector/
+This package contains the traffic light detection node: `tl_detector.py`. This node takes in data from the `/image_color`, ``/current_pose`, and `/base_waypoints` topics and publishes the locations to stop for red traffic lights to the `/traffic_waypoint` topic.
+
+The `/current_pose` topic provides the vehicle's current position, and `/base_waypoints` provides a complete list of waypoints the car will be following.
+
+I built both a traffic light detection node and a traffic light classification node. Traffic light detection is takeing place within `tl_detector.py`, whereas traffic light classification is takeing place within `./tl_detector/light_classification_model/tl_classfier.py`.
+
+![alt text][image2]
